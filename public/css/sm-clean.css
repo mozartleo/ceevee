@@ -6,6 +6,7 @@
     -o-border-radius: 5px;
     border-radius: 5px;
 }
+
 .sm-clean a, .sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active {
     padding: 13px 20px;
     /* make room for the toggle button (sub indicator) */
@@ -15,12 +16,15 @@
     line-height: 17px;
     text-decoration: none;
 }
+
 .sm-clean a.current {
     color: #d23600;
 }
+
 .sm-clean a.disabled {
     color: #bbbbbb;
 }
+
 .sm-clean a span.sub-arrow {
     position: absolute;
     top: 50%;
@@ -40,10 +44,12 @@
     -o-border-radius: 5px;
     border-radius: 5px;
 }
+
 .sm-clean a.highlighted span.sub-arrow:before {
     display: block;
     content: '-';
 }
+
 .sm-clean > li:first-child > a, .sm-clean > li:first-child > :not(ul) a {
     -webkit-border-radius: 5px 5px 0 0;
     -moz-border-radius: 5px 5px 0 0;
@@ -51,6 +57,7 @@
     -o-border-radius: 5px 5px 0 0;
     border-radius: 5px 5px 0 0;
 }
+
 .sm-clean > li:last-child > a, .sm-clean > li:last-child > *:not(ul) a, .sm-clean > li:last-child > ul,
 .sm-clean > li:last-child > ul > li:last-child > a, .sm-clean > li:last-child > ul > li:last-child > *:not(ul) a, .sm-clean > li:last-child > ul > li:last-child > ul,
 .sm-clean > li:last-child > ul > li:last-child > ul > li:last-child > a, .sm-clean > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a, .sm-clean > li:last-child > ul > li:last-child > ul > li:last-child > ul,
@@ -62,6 +69,7 @@
     -o-border-radius: 0 0 5px 5px;
     border-radius: 0 0 5px 5px;
 }
+
 .sm-clean > li:last-child > a.highlighted, .sm-clean > li:last-child > *:not(ul) a.highlighted,
 .sm-clean > li:last-child > ul > li:last-child > a.highlighted, .sm-clean > li:last-child > ul > li:last-child > *:not(ul) a.highlighted,
 .sm-clean > li:last-child > ul > li:last-child > ul > li:last-child > a.highlighted, .sm-clean > li:last-child > ul > li:last-child > ul > li:last-child > *:not(ul) a.highlighted,
@@ -73,36 +81,44 @@
     -o-border-radius: 0;
     border-radius: 0;
 }
+
 .sm-clean li {
     border-top: 1px solid rgba(0, 0, 0, 0.05);
 }
+
 .sm-clean > li:first-child {
     border-top: 0;
 }
+
 .sm-clean ul {
     background: transparent;
 }
+
 .sm-clean ul a, .sm-clean ul a:hover, .sm-clean ul a:focus, .sm-clean ul a:active {
     font-size: 16px;
 }
+
 .sm-clean ul ul a,
 .sm-clean ul ul a:hover,
 .sm-clean ul ul a:focus,
 .sm-clean ul ul a:active {
     border-left: 16px solid transparent;
 }
+
 .sm-clean ul ul ul a,
 .sm-clean ul ul ul a:hover,
 .sm-clean ul ul ul a:focus,
 .sm-clean ul ul ul a:active {
     border-left: 24px solid transparent;
 }
+
 .sm-clean ul ul ul ul a,
 .sm-clean ul ul ul ul a:hover,
 .sm-clean ul ul ul ul a:focus,
 .sm-clean ul ul ul ul a:active {
     border-left: 32px solid transparent;
 }
+
 .sm-clean ul ul ul ul ul a,
 .sm-clean ul ul ul ul ul a:hover,
 .sm-clean ul ul ul ul ul a:focus,
@@ -124,10 +140,9 @@
     .sm-clean li {
         display: inline-block;
     }
-    
-    .sm-clean .sub-menu li
-    {
-        display: block;        
+
+    .sm-clean .sub-menu li {
+        display: block;
         padding-left: 6px;
     }
 
@@ -161,6 +176,7 @@
         -o-border-radius: 100px;
         border-radius: 100px;
     }
+
     .sm-clean a, .sm-clean a:hover, .sm-clean a:focus, .sm-clean a:active, .sm-clean a.highlighted {
         padding: 12px 12px;
         -webkit-border-radius: 0 !important;
@@ -173,6 +189,7 @@
     .sm-clean a.has-submenu {
         padding-right: 24px;
     }
+
     .sm-clean a span.sub-arrow {
         top: 0;
         margin-top: 3px;
@@ -186,39 +203,48 @@
         -o-border-radius: 0;
         border-radius: 0;
     }
+
     .sm-clean a.highlighted span.sub-arrow:before {
         display: none;
     }
+
     .sm-clean li {
         border-top: 0;
-    }    
+    }
+
     .sm-clean > li > ul:after {
         top: -16px;
         left: 31px;
         border-width: 8px;
         border-color: transparent transparent white transparent;
     }
+
     .sm-clean ul {
         padding: 5px 0;
         background: #201b55;
     }
+
     .sm-clean ul a, .sm-clean ul a:hover, .sm-clean ul a:focus, .sm-clean ul a:active, .sm-clean ul a.highlighted {
         border: 0 !important;
         padding: 12px;
     }
+
     .sm-clean ul a.disabled {
         background: white;
         color: #cccccc;
     }
+
     .sm-clean ul a.has-submenu {
         padding-right: 20px;
     }
+
     .sm-clean ul a span.sub-arrow {
         right: -5px;
         top: 0;
         margin-top: 3px;
         border: 0;
     }
+
     .sm-clean span.scroll-up,
     .sm-clean span.scroll-down {
         position: absolute;
@@ -228,16 +254,20 @@
         background: white;
         height: 20px;
     }
+
     .sm-clean span.scroll-up:hover,
     .sm-clean span.scroll-down:hover {
         background: #eeeeee;
     }
+
     .sm-clean span.scroll-up:hover span.scroll-up-arrow, .sm-clean span.scroll-up:hover span.scroll-down-arrow {
         border-color: transparent transparent #d23600 transparent;
     }
+
     .sm-clean span.scroll-down:hover span.scroll-down-arrow {
         border-color: #d23600 transparent transparent transparent;
     }
+
     .sm-clean span.scroll-up-arrow, .sm-clean span.scroll-down-arrow {
         position: absolute;
         top: 0;
@@ -250,45 +280,55 @@
         border-style: dashed dashed solid dashed;
         border-color: transparent transparent #555555 transparent;
     }
+
     .sm-clean span.scroll-down-arrow {
         top: 8px;
         border-style: solid dashed dashed dashed;
         border-color: #555555 transparent transparent transparent;
     }
+
     .sm-clean.sm-rtl a.has-submenu {
         padding-right: 12px;
         padding-left: 24px;
     }
+
     .sm-clean.sm-rtl a span.sub-arrow {
         right: auto;
         left: 12px;
     }
+
     .sm-clean.sm-rtl.sm-vertical a.has-submenu {
         padding: 10px 20px;
     }
+
     .sm-clean.sm-rtl.sm-vertical a span.sub-arrow {
         right: auto;
         left: 8px;
         border-style: dashed solid dashed dashed;
         border-color: transparent #555555 transparent transparent;
     }
+
     .sm-clean.sm-rtl > li > ul:before {
         left: auto;
         right: 30px;
     }
+
     .sm-clean.sm-rtl > li > ul:after {
         left: auto;
         right: 31px;
     }
+
     .sm-clean.sm-rtl ul a.has-submenu {
         padding: 10px 20px !important;
     }
+
     .sm-clean.sm-rtl ul a span.sub-arrow {
         right: auto;
         left: 8px;
         border-style: dashed solid dashed dashed;
         border-color: transparent #555555 transparent transparent;
     }
+
     .sm-clean.sm-vertical {
         padding: 10px 0;
         -webkit-border-radius: 5px;
@@ -297,15 +337,19 @@
         -o-border-radius: 5px;
         border-radius: 5px;
     }
+
     .sm-clean.sm-vertical a {
         padding: 10px 20px;
     }
+
     .sm-clean.sm-vertical a:hover, .sm-clean.sm-vertical a:focus, .sm-clean.sm-vertical a:active, .sm-clean.sm-vertical a.highlighted {
         background: white;
     }
+
     .sm-clean.sm-vertical a.disabled {
         background: #eeeeee;
     }
+
     .sm-clean.sm-vertical a span.sub-arrow {
         right: 8px;
         top: 50%;
@@ -314,16 +358,20 @@
         border-style: dashed dashed dashed solid;
         border-color: transparent transparent transparent #555555;
     }
+
     .sm-clean.sm-vertical > li > ul:before,
     .sm-clean.sm-vertical > li > ul:after {
         display: none;
     }
+
     .sm-clean.sm-vertical ul a {
         padding: 10px 20px;
     }
+
     .sm-clean.sm-vertical ul a:hover, .sm-clean.sm-vertical ul a:focus, .sm-clean.sm-vertical ul a:active, .sm-clean.sm-vertical ul a.highlighted {
         background: #eeeeee;
     }
+
     .sm-clean.sm-vertical ul a.disabled {
         background: white;
     }

@@ -24,11 +24,11 @@ jQuery(document).ready(function () {
     //Portfolio
     var grid = jQuery('.grid').imagesLoaded(function () {
         grid.isotope({
-            itemSelector: '.grid-item',
-            masonry: {
-                columnWidth: '.grid-sizer'
+                itemSelector: '.grid-item',
+                masonry: {
+                    columnWidth: '.grid-sizer'
+                }
             }
-        }
         );
         //Fix for portfolio item text
         jQuery('.portfolio-text-holder').each(function () {
@@ -50,8 +50,7 @@ jQuery(window).load(function () {
 
     //Show-Hide Mobile Menu
     jQuery('.mob-menu').on("click", showHideMobMenu);
-    if (jQuery("body").width() <= 925)
-    {
+    if (jQuery("body").width() <= 925) {
         jQuery('.main-menu a').on("click", hideMobMenuItemClick);
     }
 
@@ -59,16 +58,14 @@ jQuery(window).load(function () {
     jQuery(".image-slider").each(function () {
         var id = jQuery(this).attr('id');
         var auto_value = window[id + '_auto'];
-        if (auto_value == 'false')
-        {
+        if (auto_value == 'false') {
             auto_value = false;
         } else {
             auto_value = true;
         }
 
         var hover_pause = window[id + '_hover'];
-        if (hover_pause == 'true')
-        {
+        if (hover_pause == 'true') {
             hover_pause = 'resume';
         } else {
             hover_pause = false;
@@ -108,16 +105,14 @@ jQuery(window).load(function () {
     jQuery(".testimonial").each(function () {
         var id = jQuery(this).attr('id');
         var auto_value = window[id + '_auto'];
-        if (auto_value == 'false')
-        {
+        if (auto_value == 'false') {
             auto_value = false;
         } else {
             auto_value = true;
         }
 
         var hover_pause = window[id + '_hover'];
-        if (hover_pause == 'true')
-        {
+        if (hover_pause == 'true') {
             hover_pause = 'resume';
         } else {
             hover_pause = false;
@@ -157,16 +152,14 @@ jQuery(window).load(function () {
         var id = jQuery(this).attr('id');
 
         var auto_value = window[id + '_auto'];
-        if (auto_value == 'false')
-        {
+        if (auto_value == 'false') {
             auto_value = false;
         } else {
             auto_value = true;
         }
 
         var hover_pause = window[id + '_hover'];
-        if (hover_pause == 'true')
-        {
+        if (hover_pause == 'true') {
             hover_pause = 'resume';
         } else {
             hover_pause = false;
@@ -238,8 +231,7 @@ jQuery(window).load(function () {
     jQuery("a[rel^='prettyPhoto']").each(function () {
 
         var str = jQuery(this).attr('href');
-        if ((str.indexOf("youtube") >= 0 || (str.indexOf("vimeo")) >= 0))
-        {
+        if ((str.indexOf("youtube") >= 0 || (str.indexOf("vimeo")) >= 0)) {
             jQuery(this).attr("href", str + "&width=" + $videoDefaultWidth + "&height=" + $videoDefaultHeight);
         }
     });
@@ -254,7 +246,7 @@ jQuery(window).load(function () {
         var obj = $mainMenu.data('smartmenus');
         if (obj.isCollapsible()) {
             var $item = jQuery(this).parent(),
-                    $sub = $item.parent().dataSM('sub');
+                $sub = $item.parent().dataSM('sub');
             $sub.dataSM('arrowClicked', true);
         }
     }).bind({
@@ -280,8 +272,7 @@ jQuery(window).load(function () {
 jQuery(window).resize(function () {
 
     //Show-Hide Mobile Menu        
-    if (jQuery("body").width() <= 925)
-    {
+    if (jQuery("body").width() <= 925) {
         jQuery('.main-menu a').on("click", hideMobMenuItemClick);
     }
 
@@ -291,8 +282,7 @@ jQuery(window).resize(function () {
 
         var str = jQuery(this).attr('href');
         str = str.split('&width');
-        if ((str[0].indexOf("youtube") >= 0 || (str[0].indexOf("vimeo")) >= 0))
-        {
+        if ((str[0].indexOf("youtube") >= 0 || (str[0].indexOf("vimeo")) >= 0)) {
             jQuery(this).attr("href", str[0] + "&width=" + $videoDefaultWidth + "&height=" + $videoDefaultHeight);
         }
     });
@@ -318,8 +308,7 @@ var showHideMobMenu = function (e) {
 };
 
 var hideMobMenuItemClick = function (e) {
-    if (jQuery('.mob-menu').is(':visible'))
-    {
+    if (jQuery('.mob-menu').is(':visible')) {
         jQuery('.main-menu').slideUp();
     }
 };
@@ -352,8 +341,7 @@ var SendMail = function () {
             success: function (response) {
                 if (response) {
                     var responseObj = jQuery.parseJSON(response);
-                    if (responseObj.ResponseData)
-                    {
+                    if (responseObj.ResponseData) {
                         alert(responseObj.ResponseData);
                     }
                 }
@@ -361,8 +349,7 @@ var SendMail = function () {
             error: function (xhr, ajaxOptions, thrownError) {
                 //xhr.status : 404, 303, 501...
                 var error = null;
-                switch (xhr.status)
-                {
+                switch (xhr.status) {
                     case "301":
                         error = "Redirection Error!";
                         break;
@@ -386,8 +373,7 @@ var SendMail = function () {
                 }
             }
         });
-    } else
-    {
+    } else {
         alert('Your email is not in valid format');
     }
 
